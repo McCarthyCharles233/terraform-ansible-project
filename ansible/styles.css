@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.profile_img{
+    width: 40%;
+    height: auto;
+    border: 2px solid rgba(169, 156, 156, 0.541);
+    border-radius: 50%;
+
+}
+
+.info{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 2rem;
+    line-height: 3rem;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(51, 81, 89);;
+}
+
+.links{
+    display: block;
+    place-content: center;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: rgb(51, 81, 89);
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn{
+    display: block;
+    border: 2px solid rgb(51, 81, 89);;
+    padding: 5px;
+    border-radius: 50px 50px;
+}
+
+a:hover{
+    background-color: rgba(122, 122, 184, 0.482);
+    color: aliceblue;
+    transition: ease-in;
+}
+
+/* For mobile */
+@media screen  and (min-width: 576px) {
+    body{
+        height: auto;
+    }
+}
+
+/* For medium size screens */
+@media screen  and (min-width: 768px) {
+    body{
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    }
+
+    .info{
+        color: rgba(21, 20, 21, 0.973);
+    }
+
+    .links a{
+        color: rgba(28, 25, 25, 0.941);
+    }
+
+    .btn{
+        border-color: rgba(36, 40, 51, 0.918);
+    }
+    a:hover{
+        background-color: #b27ae1ba;
+        color: aliceblue;
+        transition: ease-in;
+    }
+}
+
+/* For large screens */
+@media screen  and (min-width: 992px) {
+    body{
+        height: auto;
+        background-color: #FFDEE9;
+        background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+    }
+
+    .info{
+        color: rgba(41, 44, 48, 0.744);
+    }
+
+    .links a{
+        color: rgba(33, 52, 67, 0.689);
+    }
+
+    .btn{
+        border-color: rgba(21, 23, 27, 0.804);
+    }
+    a:hover{
+        background-color: #573b4f7b;
+        color: aliceblue;
+        transition: ease-in;
+    }
+}
+
+/* extralage screens */
+@media screen  and (min-width: 1200px) {
+    body{
+        height: auto;
+        background-color: #FBDA61;
+        background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    }
+
+    .info{
+        color: rgba(60, 17, 54, 0.744);
+    }
+
+    .links a{
+        color: rgba(60, 50, 50, 0.877);
+    }
+
+    .btn{
+        border-color: rgba(33, 40, 60, 0.804);
+    }
+    a:hover{
+        background-color: #9e70939e;
+        color: aliceblue;
+        transition: ease-in;
+    }
+}
